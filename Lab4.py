@@ -2,32 +2,45 @@ def fibonacci(n):
     if n < 2:
         return n
     else:
-        (a, b) = (0, 1)
-        for i in range(n-1):
-            a, b = b, a+b
-        return a
-
+        a, b = 0, 1
+        for i in range(n - 1):
+            a, b = b, a + b
+        return b
 
 def is_prime(n):
-    if n % 2 == 0:
+    if n <= 1:
         return False
-    else:
+    elif n == 2:
         return True
+    elif n % 2 == 0:
+        return False
+
+    i = 3
+    while i * i <= n:
+        if n % i == 0:
+            return False
+        i += 2
+    return True
+
 
 
 
 def print_prime_factors(arg):
     n = arg
-    factors = []
+    factors = ""
     i = 2
+    first = True  
+
     while n > 1:
         if n % i == 0:
-            factors += [i]
+            if first:
+                factors += str(i)
+                first = False
+            else:
+                factors += " * " + str(i)
             n //= i
-        else :
+        else:
             i += 1
-    result = str(factors[0])
-    for j in range(1, len(factors)):
-        result += " * " + str(factors[j])
 
-    return str(arg) + " = " + result
+    print(str(arg) + " = " + factors)
+

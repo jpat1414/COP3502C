@@ -1,11 +1,11 @@
 def fibonacci(n):
-    if n < 2:
+    if n <= 1:
         return n
     else:
         a, b = 0, 1
         for i in range(n - 1):
             a, b = b, a + b
-        return b
+        return a
 
 def is_prime(n):
     if n <= 1:

@@ -3,11 +3,7 @@ Overview
 
 In this lab, you will build three functions. The first function will calculate the nth Fibonacci number. The second function will check whether a given number is prime. The third function will print the prime factors of a given number. The lab is designed to give you an opportunity to experiment with writing functions while practicing loops and conditionals.
 
-Submission Instructions
-
-After completing all programs, please submit your Lab4.py file. This file should ONLY have your function definitions. PLEASE read the instructions carefully.
-
- Specification
+Specification
 
 Function 1: Fibonacci Numbers
 
@@ -29,7 +25,6 @@ fibonacci(2) == 1
 fibonacci(3) == 1
 fibonacci(6) == 5
 fibonacci(25) == 46368
-
 
 
 Function 2: Prime Numbers 

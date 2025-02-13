@@ -1,6 +1,8 @@
 def fibonacci(n):
-    if n <= 1:
+    if n = 1:
         return n
+    elif n = 0 
+        return 0
     else:
         a, b = 0, 1
         for i in range(n - 1):

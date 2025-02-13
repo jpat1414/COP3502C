@@ -1,7 +1,5 @@
 def fibonacci(n):
-    if n == 1:
-        return n
-    elif n == 0: 
+    if n <= 1:
         return 0
     else:
         a, b = 0, 1
